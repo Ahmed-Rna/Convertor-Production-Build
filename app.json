@@ -3,11 +3,15 @@
     "name": "convertor PB",
     "slug": "Convertor-PB",
     "version": "1.0.0",
-    
     "newArchEnabled": true,
-    
-    
-   
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -15,6 +19,9 @@
       "eas": {
         "projectId": "6375525b-9cca-42b1-bfe4-951c2f908479"
       }
+    },
+    "android": {
+      "package": "com.ProductionBuild"
     }
   }
 }
