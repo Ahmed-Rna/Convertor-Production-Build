@@ -102,7 +102,7 @@ android {
             keyPassword 'expo123571AD'
         }
     }
-        debug {
+    debug {
             storeFile file('debug.keystore')
             storePassword 'android'
             keyAlias 'androiddebugkey'
