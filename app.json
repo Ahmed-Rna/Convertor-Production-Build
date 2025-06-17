@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "convertor PB",
+    "name": "All Unit Converters ",
     "slug": "Convertor-PB",
     "version": "1.0.0",
     "newArchEnabled": true,
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F9F9F9"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -22,6 +22,10 @@
     },
     "android": {
       "package": "com.ProductionBuild"
-    }
+    },
+    "ios": {
+      "bundleIdentifier": "com.ProductionBuild"
+    },
+    "owner": "ahmed-s22"
   }
 }

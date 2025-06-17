@@ -58,9 +58,7 @@ const AboutUs = () => {
 
             {/* Footer */}
             <View style={tw`bg-gray-800 p-4 rounded-lg shadow-xl mt-8`}>
-                <Text style={tw`text-center text-gray-300 text-sm`}>
-                    © 2024 LetTechnologies. All rights reserved.
-                </Text>
+               
                 <Text style={tw`text-center text-gray-300 text-lg mt-2`}>
                     Empowering users with technology.
                 </Text>

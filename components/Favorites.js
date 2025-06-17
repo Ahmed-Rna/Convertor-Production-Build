@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import {
   View,
@@ -287,8 +288,9 @@ const Favorites = () => {
   };
 
   const navigateToScreen = (screen) => {
-    navigation.navigate(screen);
+    navigation.navigate('Home', { screen: screen });
   };
+  
 
   return (
     <View style={tw`flex-1 p-4 bg-black`}>

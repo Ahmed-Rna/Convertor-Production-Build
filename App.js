@@ -359,7 +359,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { View, Text } from 'react-native';
 import MyTabs from './MyTabs';
 import AboutUs from './components/DrawerNavigation/AboutUs';
-import Feedback from './components/DrawerNavigation/Feedback';
+
 import ContactUs from './components/DrawerNavigation/ContactUs';
 
 
@@ -386,10 +386,16 @@ function DrawerNavigator() {
         },
         headerTintColor: 'white',
       }} />
-      <Drawer.Screen name="Feedback" component={Feedback} />
-      <Drawer.Screen name="Contact Us" component={ContactUs} />
-      <Drawer.Screen name="About Us" component={AboutUs} />
+    
+      <Drawer.Screen name="Contact Us" component={ContactUs} options={{
+        headerStyle: { backgroundColor: 'black' },
+        headerTintColor: 'white',
 
+      }} />
+      <Drawer.Screen name="About Us" component={AboutUs} options={{
+        headerStyle: { backgroundColor: 'black' },
+        headerTintColor: 'white',
+      }} />
     </Drawer.Navigator>
   );
 }
