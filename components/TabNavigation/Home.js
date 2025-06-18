@@ -3,9 +3,7 @@ import { View, Text, Image, TouchableOpacity, ScrollView, StatusBar } from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';
 import tw from 'twrnc';
 import { useNavigation } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { FontAwesome } from "@expo/vector-icons";
-import  'expo-dev-client'
+
 
 const solutions = [
   { name: 'Length', source: require('../../assets/length2.jpeg'), screen: 'Length' },

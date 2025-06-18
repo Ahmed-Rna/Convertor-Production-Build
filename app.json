@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "All Unit Converters ",
+    "name": "Convert Units",
     "slug": "Convertor-PB",
     "version": "1.0.0",
     "newArchEnabled": true,
@@ -21,10 +21,10 @@
       }
     },
     "android": {
-      "package": "com.ProductionBuild"
+      "package": "com.lettech.convertunit"
     },
     "ios": {
-      "bundleIdentifier": "com.ProductionBuild"
+      "bundleIdentifier": "com.lettech.convertunit"
     },
     "owner": "ahmed-s22"
   }
