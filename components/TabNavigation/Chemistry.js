@@ -3,6 +3,13 @@ import { View, Text, Image, TouchableOpacity, ScrollView, StatusBar } from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';
 import tw from 'twrnc';
 import { useNavigation } from '@react-navigation/native';
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from 'react-native-google-mobile-ads';
+
+
 
 
 const Concentration = [
@@ -152,12 +159,17 @@ const Chemistry = () => {
 
         {/* Image */}
         <Image
-          style={tw`w-100 h-50`}
+          style={tw`w-full h-50`}
           source={require('../../assets/Chemistry1.jpeg')}Pressure
         />
 
+
+<BannerAd
+  unitId={TestIds.BANNER}
+  size={BannerAdSize.FULL_BANNER}
+/>
         {/* Unit Views */}
-        <Text style={tw`border border-slate-100 rounded-2xl mt-2 ml-2 mt-2 text-zinc-50 text-xl font-bold p-2 bg-current`}>
+        <Text style={tw`border border-slate-100 rounded-2xl mt-2 ml-2 mt-2 text-zinc-50 text-xl font-bold p-2 bg-current text-center`}>
           CHEMISTRY
         </Text>
         {/* Common Dropdown Button */}
@@ -183,7 +195,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-27 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-27 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   {/* Dynamically set the image source */}
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
@@ -219,7 +231,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-26 p-4 rounded  flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-25 w-[33.3] p-4 rounded  flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -254,7 +266,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-30 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-30 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -288,7 +300,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-25 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -323,7 +335,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index} StockMarketAndTrading
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-26 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-26 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-2 text-sm text-white`}>{item.name}</Text>
@@ -357,7 +369,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -391,7 +403,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-2 text-sm text-white`}>{item.name}</Text>
@@ -425,7 +437,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-25 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -458,7 +470,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -491,7 +503,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-25 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -524,7 +536,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -557,7 +569,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -590,7 +602,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -623,7 +635,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>
@@ -656,7 +668,7 @@ const Chemistry = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-28 w-26 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-28 w-[33.3] p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-4 text-sm text-white`}>{item.name}</Text>

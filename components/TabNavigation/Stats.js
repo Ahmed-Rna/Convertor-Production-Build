@@ -3,6 +3,12 @@ import { View, Text, Image, TouchableOpacity, ScrollView, StatusBar } from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';
 import tw from 'twrnc';
 import { useNavigation } from '@react-navigation/native';
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from 'react-native-google-mobile-ads';
+
 
 const Area = [
   { name: 'Mean', source: require('../../assets/s17.jpeg'), screen: 'Mean' },
@@ -75,10 +81,15 @@ const Math = () => {
 
         {/* Image */}
         <Image
-          style={tw`w-100 h-50`}
+          style={tw`w-full h-50`}
           source={require('../../assets/Mathematics2.jpeg')}
         />
-         <Text style={tw`border border-slate-100 rounded-2xl mt-2 ml-4 text-zinc-50 text-xl font-bold p-2 bg-current`}>
+        
+        <BannerAd
+          unitId={TestIds.BANNER}
+          size={BannerAdSize.FULL_BANNER}
+        />
+         <Text style={tw`border border-slate-100 rounded-2xl mt-2 ml-4 text-zinc-50 text-xl font-bold p-2 bg-current text-center`}>
           STATISTICS
         </Text>
 
@@ -105,7 +116,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   {/* Dynamically set the image source */}
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
@@ -141,7 +152,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40  p-4 rounded  flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40  p-4 rounded  flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -176,7 +187,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -212,7 +223,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -247,7 +258,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-2 text-sm text-white`}>{item.name}</Text>
@@ -280,7 +291,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
@@ -314,7 +325,7 @@ const Math = () => {
                 <TouchableOpacity
                   key={index}
                   onPress={() => handlePress(item.screen)}
-                  style={tw`border border-slate-100 bg-current h-25 w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
+                  style={tw`border border-slate-100 bg-current h-[26] w-40 p-4 rounded mt-2 flex-col items-center p-3 ml-2 border-b border-gray-200`}
                 >
                   <Image source={item.source} style={tw`w-10 h-10 mr-1`} />
                   <Text style={tw`font-normal mt-1 text-sm text-white`}>{item.name}</Text>
